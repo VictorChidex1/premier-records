@@ -10,18 +10,60 @@ import type { Artist, CatalogueItem, NewsArticle, Release } from '@/types'
  * Premier artists, releases, or company facts.
  */
 
-export const mockFeaturedArtist: Artist = {
-  id: 'placeholder-artist',
-  name: 'Featured Artist',
-  slug: 'featured-artist',
-  bio: 'Placeholder biography for the featured artist. Replace with verified Premier artist information.',
-  imageUrl: '',
-  genre: 'Placeholder',
-  featured: true,
-  status: 'published',
-  createdAt: new Date(),
-  updatedAt: new Date(),
-}
+export const mockFeaturedArtists: Artist[] = [
+  {
+    id: 'sir-victor-uwaifo',
+    name: 'Sir Victor Uwaifo',
+    slug: 'sir-victor-uwaifo',
+    bio: 'Sir Victor Uwaifo (1941–2021) was a Nigerian guitarist, singer, composer and cultural figure associated with highlife and the musical heritage of Edo culture. He rose to international recognition through songs including "Joromi" and "Guitar Boy," earning recognition as the first African recipient of a gold record, and was also a sculptor, writer and inventor of the 18-string "magic guitar."',
+    imageUrl: '/assets/Sir%20Victor%20Uwaifo.jpg',
+    genre: 'Highlife',
+    category: 'LEGACY / HIGHLIFE',
+    featured: true,
+    status: 'published',
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: 'gentleman-mike-ejeagha',
+    name: 'Gentleman Mike Ejeagha',
+    slug: 'gentleman-mike-ejeagha',
+    bio: 'Gentleman Mike Ejeagha (1930–2025) was a Nigerian folklorist, songwriter and guitarist whose work helped preserve and evolve Igbo folk music, combining guitar-driven highlife with folklore, proverbs and storytelling. He recorded extensively under the Premier/Polygram music system, including songs such as "Ka Esi Le Onye Isi Oche."',
+    imageUrl: '/assets/Gentleman%20Mike%20Ejeagha.jpeg',
+    genre: 'Igbo Folklore',
+    category: 'HERITAGE / IGBO FOLKLORE',
+    featured: true,
+    status: 'published',
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: 'dr-victor-olaiya',
+    name: 'Dr. Victor Olaiya',
+    slug: 'dr-victor-olaiya',
+    bio: 'Dr. Victor Olaiya (1930–2020) was a Nigerian trumpeter, singer and bandleader and one of the major figures in Nigerian highlife. He formed the Cool Cats band in 1954, performed at major national occasions including celebrations around Nigeria\u2019s independence, and shared the stage with Louis Armstrong.',
+    imageUrl: '/assets/Dr.%20Victor%20Olaiya.jpeg',
+    genre: 'Highlife',
+    category: 'HIGHLIFE / CATALOGUE LEGACY',
+    featured: true,
+    status: 'published',
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: 'mya-blue',
+    name: 'Mya Blue',
+    slug: 'mya-blue',
+    bio: 'Mya Blue is an AI/virtual music artist associated with Premier Records\u2019 2024 modern reinterpretation of Sir Victor Uwaifo\u2019s classic "Joromi." Created by producer Eclipse Nkasi, the project combines Uwaifo\u2019s original musical legacy with Afrobeats, Amapiano and contemporary AI technology.',
+    imageUrl: '/assets/Mya%20Blue.jpeg',
+    genre: 'AI Artist',
+    category: 'INNOVATION / AI ARTIST',
+    featured: true,
+    status: 'published',
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+]
 
 export const mockReleases: Release[] = [
   {

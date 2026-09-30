@@ -12,7 +12,7 @@ import { useHomeContent } from '@/hooks/useHomeContent'
 
 export default function Home() {
   const {
-    featuredArtist,
+    featuredArtists,
     releases,
     catalogue,
     news,
@@ -25,7 +25,7 @@ export default function Home() {
     <>
       <Hero />
       <SectionReveal>
-        <FeaturedArtist artist={featuredArtist} />
+        <FeaturedArtist artists={featuredArtists} />
       </SectionReveal>
       <SectionReveal>
         <LatestMusic releases={releases} />

@@ -15,6 +15,7 @@ export interface Artist {
   bio: string
   imageUrl: string
   genre?: string
+  category?: string
   socialLinks?: {
     instagram?: string
     spotify?: string

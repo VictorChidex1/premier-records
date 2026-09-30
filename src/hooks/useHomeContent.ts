@@ -1,6 +1,6 @@
 import {
   mockCatalogue,
-  mockFeaturedArtist,
+  mockFeaturedArtists,
   mockLicensingCopy,
   mockNews,
   mockPublishingCopy,
@@ -15,7 +15,7 @@ import {
  */
 export function useHomeContent() {
   return {
-    featuredArtist: mockFeaturedArtist,
+    featuredArtists: mockFeaturedArtists,
     releases: mockReleases,
     catalogue: mockCatalogue,
     news: mockNews,
