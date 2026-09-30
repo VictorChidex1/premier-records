@@ -61,7 +61,7 @@ export function BusinessCta() {
       {/* Parallax Background Layer */}
       <motion.div 
         style={{ y: yParallax }}
-        className="absolute inset-0 bg-[#0a0a0a] scale-[1.2]"
+        className="absolute inset-0 bg-foreground scale-[1.2]"
       />
       
       {/* Content Layer */}
@@ -73,7 +73,7 @@ export function BusinessCta() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: easeOut }}
-          className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.4em] text-white/50 mb-12 lg:mb-16 z-20 pointer-events-auto text-center px-6"
+          className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.4em] text-background/50 mb-12 lg:mb-16 z-20 pointer-events-auto text-center px-6"
         >
           Looking to work with Premier?
         </motion.p>
@@ -88,8 +88,8 @@ export function BusinessCta() {
             {marqueeWords.map((word, i) => (
               <span 
                 key={i}
-                className="font-heading text-7xl sm:text-9xl lg:text-[14rem] font-medium leading-[1.1] lg:leading-[0.9] tracking-tighter text-transparent transition-colors duration-500 ease-out hover:text-white cursor-default"
-                style={{ WebkitTextStroke: '2px rgba(255,255,255,0.15)' }}
+                className="font-heading text-7xl sm:text-9xl lg:text-[14rem] font-medium leading-[1.1] lg:leading-[0.9] tracking-tighter text-transparent transition-colors duration-500 ease-out hover:text-background cursor-default"
+                style={{ WebkitTextStroke: '2px var(--background)' }}
               >
                 {word}.
               </span>
@@ -107,13 +107,13 @@ export function BusinessCta() {
           <motion.div style={{ x, y }}>
             <Link
               to="/contact"
-              className="group/btn relative inline-flex h-16 lg:h-24 items-center gap-4 rounded-full bg-white px-8 lg:px-14 text-xs lg:text-[13px] font-semibold uppercase tracking-[0.2em] text-[#0a0a0a] transition-all hover:scale-105 active:scale-95 overflow-hidden shadow-2xl"
+              className="group/btn relative inline-flex h-16 lg:h-24 items-center gap-4 rounded-full bg-background px-8 lg:px-14 text-xs lg:text-[13px] font-semibold uppercase tracking-[0.2em] text-foreground transition-all hover:scale-105 active:scale-95 overflow-hidden shadow-2xl"
             >
                {/* Hover Fill Effect inside button */}
                <div className="absolute inset-0 bg-primary translate-y-[101%] rounded-full transition-transform duration-500 ease-out group-hover/btn:translate-y-0" />
                
-               <span className="relative z-10 transition-colors duration-500 group-hover/btn:text-white">Start a Conversation</span>
-               <ArrowRight className="relative z-10 size-4 lg:size-5 transition-all duration-500 group-hover/btn:translate-x-3 group-hover/btn:text-white" />
+               <span className="relative z-10 transition-colors duration-500 group-hover/btn:text-primary-foreground">Start a Conversation</span>
+               <ArrowRight className="relative z-10 size-4 lg:size-5 transition-all duration-500 group-hover/btn:translate-x-3 group-hover/btn:text-primary-foreground" />
             </Link>
           </motion.div>
         </div>
