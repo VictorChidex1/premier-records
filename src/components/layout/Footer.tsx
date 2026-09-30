@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowUpRight, Globe } from 'lucide-react'
+import { Globe } from 'lucide-react'
 
 function InstagramIcon({ className = 'size-3.5' }: { className?: string }) {
   return (
@@ -22,39 +22,7 @@ function YoutubeIcon({ className = 'size-3.5' }: { className?: string }) {
 export function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-border/60 bg-background transition-colors">
-      <div className="mx-auto w-full max-w-[1720px] px-6 sm:px-10 lg:px-16 pt-16 lg:pt-24 pb-12">
-        {/* Pre-Footer Business Dispatch Banner */}
-        <div className="mb-16 rounded-2xl sm:rounded-3xl border border-border/80 bg-muted/40 p-8 sm:p-12 backdrop-blur-xs flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-          <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-background/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-              <span className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />
-              Licensing & Repertoire
-            </span>
-            <h3 className="mt-3 text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground">
-              Looking to license our catalogue or collaborate with our creators?
-            </h3>
-            <p className="mt-2 text-sm sm:text-base text-muted-foreground leading-relaxed">
-              We represent master recordings, publishing rights, and original compositions for global media, advertising, film, and television.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-3 shrink-0">
-            <Link
-              to="/licensing"
-              className="flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-xs font-semibold uppercase tracking-wider text-background shadow-xs transition-all hover:bg-foreground/90 active:scale-95"
-            >
-              <span>Licensing Opportunities</span>
-              <ArrowUpRight className="size-4" />
-            </Link>
-            <Link
-              to="/contact"
-              className="flex items-center gap-2 rounded-full border border-border/80 bg-background/80 px-5 py-3 text-xs font-semibold uppercase tracking-wider text-foreground transition-all hover:bg-muted active:scale-95"
-            >
-              <span>General Enquiry</span>
-            </Link>
-          </div>
-        </div>
-
+      <div className="mx-auto w-full max-w-[1720px] px-6 sm:px-10 lg:px-16 pt-12 sm:pt-16 lg:pt-20 pb-12">
         {/* 4-Column Structured Repertoire & Publishing Matrix */}
         <div className="grid grid-cols-1 gap-8 sm:gap-12 sm:grid-cols-2 lg:grid-cols-5 pb-8 sm:pb-12 lg:pb-16 border-b border-border/60">
           {/* Column 1: Brand & Philosophy (spans 2 cols on lg) */}
