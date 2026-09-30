@@ -40,7 +40,7 @@ export default function Home() {
         <StoryPreview />
       </SectionReveal>
       <SectionReveal>
-        <LatestNews articles={news} />
+        <LatestNews />
       </SectionReveal>
       <SectionReveal>
         <BusinessCta />
