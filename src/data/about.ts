@@ -86,32 +86,28 @@ export const SOUND_GENRES = [
 
 export const CASE_STUDIES = [
   {
-    year: '2013',
-    title: 'BABY MI DA',
-    subtitle: 'Dr. Victor Olaiya × 2Baba',
-    description: "A classic from Dr. Victor Olaiya's catalogue was reinterpreted for a new generation, bringing Highlife together with contemporary Nigerian pop.",
-    image: '/assets/AboutHero2.jpeg' // Using an available asset as placeholder
-  },
-  {
-    year: '2023',
-    title: 'HOT PANTS',
-    subtitle: 'Bola Johnson',
-    description: "Premier revisited Bola Johnson's classic with a contemporary Amapiano interpretation, demonstrating how catalogue music can travel into new sonic contexts.",
-    image: '/assets/AboutHero3.jpg'
-  },
-  {
     year: '2024',
     title: 'JOROMI',
-    subtitle: 'Sir Victor Uwaifo',
-    description: "Sir Victor Uwaifo's enduring classic was brought into a contemporary context through a modern reinterpretation.",
+    subtitle: 'Sir Victor Uwaifo feat. Mya Blue',
+    description:
+      "Premier Records released a contemporary interpretation of Sir Victor Uwaifo's \"Joromi\" featuring Mya Blue — a World / Afrobeats / Amapiano fusion that reintroduces an established Nigerian recording to contemporary listeners through a new production and collaboration.",
     image: '/assets/joromi.png'
   },
   {
+    year: '2013',
+    title: 'BABY MI DA (BABY JOWO)',
+    subtitle: 'Dr. Victor Olaiya feat. 2Baba',
+    description:
+      'Premier brought Dr. Victor Olaiya and 2Baba together for a contemporary reinterpretation of Olaiya\'s highlife classic — released as "Baby Mi Da (Baby Jowo)," an example of a historic work being brought into a modern musical context.',
+    image: '/assets/Baby Mi Da.jpg'
+  },
+  {
     year: '2024',
-    title: 'MDUNDO',
-    subtitle: '',
-    description: "Premier partnered with Mdundo to expand access to its catalogue and introduce classic African recordings to contemporary listeners.",
-    image: '/assets/AboutHero1.jpeg'
+    title: 'YEGEDE (SAKARAPIANO)',
+    subtitle: 'DJ Flammzy & Yusufu Olatunji',
+    description:
+      'A contemporary single from Dflamz Nation / Premier Records that carries the Sakara tradition into a World / Sakara-inspired contemporary fusion — released June 14, 2024.',
+    image: '/assets/YEGEDE (SAKARAPIANO).png'
   }
 ];
 
