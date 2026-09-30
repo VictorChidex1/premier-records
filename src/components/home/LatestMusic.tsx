@@ -49,7 +49,7 @@ const VERIFIED_RELEASES = [
 
 export function LatestMusic({}: LatestMusicProps) {
   return (
-    <section className="bg-background pt-24 pb-32 sm:pt-32 sm:pb-40">
+    <section className="bg-background pt-24 pb-16 sm:pt-32 sm:pb-24">
       <div className="mx-auto w-full max-w-[1720px] px-6 sm:px-10 lg:px-16">
         
         {/* HEADER SECTION */}
