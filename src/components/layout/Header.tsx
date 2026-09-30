@@ -4,6 +4,7 @@ import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Sun, Moon, X, ArrowUpRight } from 'lucide-react'
 import { Footer } from '@/components/layout/Footer'
+import { ScrollToTop } from '@/components/layout/ScrollToTop'
 
 const navItems = [
   { label: 'Home', to: '/' },
@@ -326,6 +327,7 @@ export function Header() {
 export function Layout() {
   return (
     <div className="flex min-h-svh flex-col">
+      <ScrollToTop />
       <Header />
       <main className="flex-1">
         <Outlet />
