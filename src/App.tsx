@@ -1,4 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { ErrorBoundary } from '@/components/error/ErrorBoundary'
+import { ErrorFallback } from '@/components/error/ErrorFallback'
 import { Layout } from '@/components/layout/Header'
 import Home from '@/pages/Home'
 import Artists from '@/pages/Artists'
@@ -21,6 +23,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
+    errorElement: <ErrorFallback onReset={() => window.location.reload()} />,
     children: [
       { index: true, element: <Home /> },
       { path: 'artists', element: <Artists /> },
@@ -43,7 +46,11 @@ const router = createBrowserRouter([
 ])
 
 function App() {
-  return <RouterProvider router={router} />
+  return (
+    <ErrorBoundary>
+      <RouterProvider router={router} />
+    </ErrorBoundary>
+  )
 }
 
 export default App
