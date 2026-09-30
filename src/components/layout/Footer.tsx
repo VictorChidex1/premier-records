@@ -56,7 +56,7 @@ export function Footer() {
         </div>
 
         {/* 4-Column Structured Repertoire & Publishing Matrix */}
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-5 pb-16 border-b border-border/60">
+        <div className="grid grid-cols-1 gap-8 sm:gap-12 sm:grid-cols-2 lg:grid-cols-5 pb-8 sm:pb-12 lg:pb-16 border-b border-border/60">
           {/* Column 1: Brand & Philosophy (spans 2 cols on lg) */}
           <div className="lg:col-span-2 pr-0 lg:pr-12">
             <Link to="/" className="inline-block" aria-label="Premier home">
@@ -201,7 +201,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Utility Bar: Legal, Socials, Copyright */}
-        <div className="mt-12 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between border-t border-border/60 pt-8 text-xs text-muted-foreground">
+        <div className="pt-6 sm:pt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-xs text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Premier Records & Music Publishing. All rights reserved.</p>
 
           {/* Social Channels */}
