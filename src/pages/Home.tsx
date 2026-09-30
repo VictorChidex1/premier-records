@@ -14,7 +14,6 @@ export default function Home() {
   const {
     featuredArtists,
     releases,
-    news,
     publishing,
   } = useHomeContent()
 
