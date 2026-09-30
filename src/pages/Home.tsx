@@ -34,7 +34,7 @@ export default function Home() {
         <PublishingPreview heading={publishing.heading} body={publishing.body} cta={publishing.cta} />
       </SectionReveal>
       <SectionReveal>
-        <CataloguePreview items={catalogue} />
+        <CataloguePreview />
       </SectionReveal>
       <SectionReveal>
         <LicensingPreview heading={licensing.heading} body={licensing.body} cta={licensing.cta} />
