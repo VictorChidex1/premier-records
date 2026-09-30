@@ -14,11 +14,8 @@ export default function Home() {
   const {
     featuredArtists,
     releases,
-    catalogue,
     news,
     publishing,
-    licensing,
-    story,
   } = useHomeContent()
 
   return (
@@ -37,10 +34,10 @@ export default function Home() {
         <CataloguePreview />
       </SectionReveal>
       <SectionReveal>
-        <LicensingPreview heading={licensing.heading} body={licensing.body} cta={licensing.cta} />
+        <LicensingPreview />
       </SectionReveal>
       <SectionReveal>
-        <StoryPreview heading={story.heading} body={story.body} cta={story.cta} />
+        <StoryPreview />
       </SectionReveal>
       <SectionReveal>
         <LatestNews articles={news} />
